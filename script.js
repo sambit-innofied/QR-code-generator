@@ -5,6 +5,8 @@ const downloadBtn = document.getElementById("downloadBtn");
 const qrContainer = document.querySelector(".qr-body");
 
 let size = sizes.value;
+
+//generate button
 generateBtn.addEventListener("click", (e) => {
   e.preventDefault();
   isEmptyInput();
@@ -15,6 +17,7 @@ sizes.addEventListener("change", (e) => {
   isEmptyInput();
 });
 
+//download button
 downloadBtn.addEventListener("click", () => {
   let img = document.querySelector(".qr-body img");
 
